@@ -4,7 +4,6 @@
            @change="updateCheck()"
            :checked="item.completed"
            v-model="item.completed" />
-    <label for="checkbox">{{item.completed}}</label>
     <span :class="[item.completed ? 'completed' : '', 'itemText']"> {{ item.name }} </span>
     <button @click="removeItem()" class="trashcan">
       <fa icon="trash"/>
